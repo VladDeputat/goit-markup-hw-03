@@ -1,0 +1,213 @@
+/* banner and footer backgrounds #2F303A
+teammates background #F5F4FA
+logo #000000 #2196F3
+header nav #212121 #2196F3
+contact links #757575 #2196F3
+headings #212121
+discriptions #757575
+adress and email footer #FFFFFF, 60 % */
+
+:root {
+  --primary-heading-color: #212121;
+  --primary-text-color: #757575;
+  --banner-and-footer-background-color: #2f303a;
+  --teammates-section-background-color: #f5f4fa;
+  --header-color-hower: #2196f3;
+}
+
+/* ------body------ */
+body {
+  background-color: #ffffff;
+  font-family: roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/*---- removing decor ---*/
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/* ---------header----------- */
+
+.header-logo {
+  color: #000000;
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.header-logo span,
+.footer-logo span {
+  color: #2196f3;
+}
+
+header {
+  color: var(--primary-heading-color);
+  background-color: #ffffff;
+}
+
+.nav-link {
+  color: var(--primary-heading-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-link-current {
+  color: #2196f3;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-contact {
+  color: #757575;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-contact:hover,
+.nav-link:hover,
+.header-contact:focus,
+.nav-link:focus {
+  color: var(--header-color-hower);
+}
+
+/* --------banner------- */
+
+.banner {
+  background-color: var(--banner-and-footer-background-color);
+}
+.banner-heading {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.make-order-button {
+  background-color: #2196f3;
+  color: #ffffff;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* --portfolio buttons-- */
+
+.portfolio-button {
+  color: #212121;
+  background-color: #f5f4fa;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus,
+.portfolio-button:active {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+/* --headings and text-- */
+
+h2 {
+  color: var(--primary-heading-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.strength-section h3 {
+  color: var(--primary-heading-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.strength-section p {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.teammates-section {
+  background-color: var(--teammates-section-background-color);
+}
+
+.teammates-section h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.teammates-section p {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.portfolio-section h3 {
+  color: var(--primary-heading-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.portfolio-section p {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+/* ---footer--- */
+
+footer {
+  background-color: var(--banner-and-footer-background-color);
+}
+
+.footer-logo {
+  color: #ffffff;
+  font-family: raleway, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.footer-address {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.footer-contact {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
