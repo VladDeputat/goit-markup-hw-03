@@ -1,4 +1,4 @@
-/* banner and footer backgrounds #2F303A
+/* hero and footer backgrounds #2F303A
 teammates background #F5F4FA
 logo #000000 #2196F3
 header nav #212121 #2196F3
@@ -10,9 +10,21 @@ adress and email footer #FFFFFF, 60 % */
 :root {
   --primary-heading-color: #212121;
   --primary-text-color: #757575;
-  --banner-and-footer-background-color: #2f303a;
+  --hero-and-footer-background-color: #2f303a;
   --teammates-section-background-color: #f5f4fa;
   --header-color-hower: #2196f3;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 /* ------body------ */
@@ -32,6 +44,36 @@ a {
 }
 /* ---------header----------- */
 
+.header-container {
+  height: 80px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  outline: solid 2px tomato;
+}
+
+.header-container {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.nav-list .item + .item,
+.address-list .item + .item {
+  margin-left: 50px;
+}
+
+.address-list {
+  display: flex;
+  margin-left: auto;
+}
+
 .header-logo {
   color: #000000;
   font-family: raleway, sans-serif;
@@ -45,7 +87,7 @@ a {
   color: #2196f3;
 }
 
-header {
+.header {
   color: var(--primary-heading-color);
   background-color: #ffffff;
 }
@@ -82,12 +124,12 @@ header {
   color: var(--header-color-hower);
 }
 
-/* --------banner------- */
+/* --------hero------- */
 
-.banner {
-  background-color: var(--banner-and-footer-background-color);
+.hero {
+  background-color: var(--hero-and-footer-background-color);
 }
-.banner-heading {
+.hero-heading {
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
@@ -105,6 +147,13 @@ header {
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.make-order-button:hover,
+.make-order-button:focus {
+  background: #188ce8;
 }
 
 /* --portfolio buttons-- */
@@ -184,7 +233,7 @@ h2 {
 /* ---footer--- */
 
 footer {
-  background-color: var(--banner-and-footer-background-color);
+  background-color: var(--hero-and-footer-background-color);
 }
 
 .footer-logo {
