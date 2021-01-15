@@ -17,8 +17,8 @@ adress and email footer #FFFFFF, 60 % */
 
 html {
   box-sizing: border-box;
-  margin-left: 0 auto;
-  margin-right: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 *,
@@ -58,6 +58,18 @@ img {
 }
 button {
   border: none;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 /* ---------header----------- */
 
@@ -69,8 +81,8 @@ header .container {
 .nav-list {
   display: flex;
   margin-left: 93px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .nav-list .item + .item,
@@ -171,7 +183,6 @@ header address {
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  display: inline-block;
   padding: 10px 32px;
 }
 
@@ -214,7 +225,7 @@ header address {
 
 /* --strength-section-- */
 
-h2 {
+.heading {
   color: var(--primary-heading-color);
   font-weight: 700;
   font-size: 36px;
@@ -251,9 +262,9 @@ h2 {
   margin-left: 30px;
 }
 
-/* .strength-list .item {
+.strength-list .item {
   flex-basis: calc(100% / 4 - 30px);
-} */
+}
 
 /*---- businesses-section----- */
 
@@ -268,6 +279,10 @@ h2 {
 
 .businesses-list {
   display: flex;
+}
+
+.businesses-list .item {
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 .businesses-list .item + .item {
@@ -297,6 +312,8 @@ h2 {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  flex-basis: calc(100% / 4 - 30px);
 }
 
 .team-list .item + .item {
@@ -353,6 +370,8 @@ h2 {
 .project-list .item {
   margin-left: 30px;
   margin-top: 30px;
+
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 .project-list .item-name {
