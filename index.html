@@ -47,20 +47,18 @@
     </header>
     <!-- main container -->
     <main>
-      <section class="hero">
+      <section class="hero section">
         <div class="container">
-          <h1 class="hero-heading">
-            Эффективные решения
-            <br />
-            для вашего бизнеса
-          </h1>
-          <button class="make-order-button">Заказать услугу</button>
+          <div class="hero-content">
+            <h1 class="hero-heading">Эффективные решения для вашего бизнеса</h1>
+            <button class="make-order-button">Заказать услугу</button>
+          </div>
         </div>
       </section>
       <!-- our strength section -->
-      <section class="strength">
-        <h2 class="heading visually-hidden">Наши преимущества</h2>
+      <section class="strength section">
         <div class="strength container">
+          <h2 class="heading visually-hidden">Наши преимущества</h2>
           <ul class="strength-list">
             <li class="item">
               <h3>Внимание к деталям</h3>
@@ -82,7 +80,7 @@
         </div>
       </section>
       <!-- Businesses section -->
-      <section class="businesses">
+      <section class="businesses section">
         <div class="container">
           <h2 class="heading">Чем мы занимаемся</h2>
           <ul class="businesses-list">
@@ -99,36 +97,36 @@
         </div>
       </section>
       <!-- teammates section -->
-      <section class="team">
+      <section class="team section">
         <div class="container">
           <h2 class="heading">Наша команда</h2>
           <ul class="team-list">
             <li class="item">
               <img width="270" height="260" src="./img/team1.jpg" alt="Product Designer" />
               <div class="item-name">
-                <h3>Игорь Демьяненко</h3>
-                <p>Product Designer</p>
+                <h3 class="name">Игорь Демьяненко</h3>
+                <p class="description">Product Designer</p>
               </div>
             </li>
             <li class="item">
               <img width="270" height="260" src="./img/team2.jpg" alt="Frontend Developer" />
               <div class="item-name">
-                <h3>Ольга Репина</h3>
-                <p>Frontend Developer</p>
+                <h3 class="name">Ольга Репина</h3>
+                <p class="description">Frontend Developer</p>
               </div>
             </li>
             <li class="item">
               <img width="270" height="260" src="./img/team3.jpg" alt="Marketing" />
               <div class="item-name">
-                <h3>Николай Тарасов</h3>
-                <p>Marketing</p>
+                <h3 class="name">Николай Тарасов</h3>
+                <p class="description">Marketing</p>
               </div>
             </li>
             <li class="item">
               <img width="270" height="260" src="./img/team4.jpg" alt="UI Designer" />
               <div class="item-name">
-                <h3>Михаил Ермаков</h3>
-                <p>UI Designer</p>
+                <h3 class="name">Михаил Ермаков</h3>
+                <p class="description">UI Designer</p>
               </div>
             </li>
           </ul>
@@ -137,24 +135,31 @@
     </main>
     <!-- footer section -->
     <footer class="footer">
-      <div class="container">
-        <a class="footer-logo" href="./index.html"><span>Web</span>Studio</a>
-        <address>
-          <ul>
-            <li>
-              <a class="footer-address" href="https://goo.gl/maps/swV6j4v5GU542pUBA" target="_blank" rel="searchonmaps">
-                г. Киев, пр-т Леси Украинки, 26
-              </a>
-            </li>
-            <li>
-              <a class="footer-contact" href="mailto:info@example.com">info@example.com </a>
-            </li>
-            <li>
-              <a class="footer-contact" href="tel:+380991111111">+38 099 111 11 11 </a>
-            </li>
-          </ul>
-        </address>
-      </div>
+      <section class="container">
+        <div class="info">
+          <a class="footer-logo" href="./index.html"><span>Web</span>Studio</a>
+          <address>
+            <ul>
+              <li class="item">
+                <a
+                  class="footer-address"
+                  href="https://goo.gl/maps/swV6j4v5GU542pUBA"
+                  target="_blank"
+                  rel="searchonmaps"
+                >
+                  г. Киев, пр-т Леси Украинки, 26
+                </a>
+              </li>
+              <li class="item">
+                <a class="footer-contact" href="mailto:info@example.com">info@example.com </a>
+              </li>
+              <li class="item">
+                <a class="footer-contact" href="tel:+380991111111">+38 099 111 11 11 </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </section>
     </footer>
   </body>
 </html>
