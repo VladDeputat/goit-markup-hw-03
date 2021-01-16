@@ -87,8 +87,6 @@ button {
 .header .container {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .nav {
@@ -112,6 +110,13 @@ button {
   margin-left: auto;
 }
 
+.nav-link-current,
+.nav-link,
+.header-contact {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .header-logo,
 .footer-logo {
   color: #000000;
@@ -129,7 +134,7 @@ button {
 .header {
   color: var(--primary-heading-color);
   background-color: #ffffff;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .nav-link {
